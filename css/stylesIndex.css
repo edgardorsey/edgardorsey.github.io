@@ -28,7 +28,7 @@ body section {
    padding-bottom: 150px;
 }
 
-section figure img {
+section figure object {
    width: 400px;
    height: auto;
 }
