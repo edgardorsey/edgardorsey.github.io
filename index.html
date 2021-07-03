@@ -4,28 +4,81 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Edgar Dorsey</title>
-      <link rel="stylesheet" href="./css/stylesIndex.css" />
+      <link rel="stylesheet" href="./css/stylesPhone.css" />
       <link
          rel="stylesheet"
-         href="./css/stylesTablet.css"
-         media="(min-width: 750px)"
+         href="./css/styleBigPhone.css"
+         media="(min-width: 400px)"
       />
       <link
          rel="stylesheet"
-         href="./css/stylesLaptop.css"
-         media="(min-width: 1000px)"
+         href="./css/styleTablet.css"
+         media="(min-width: 700px)"
       />
-      <link rel="shortcut icon" href="./assets/favicon-2.ico" />
+      <link
+         rel="stylesheet"
+         href="./css/stylesIndex.css"
+         media="(min-width: 1150px)"
+      />
+      <link rel="shortcut icon" href="./assets/favicon.ico" />
+      <script
+         src="https://kit.fontawesome.com/90f1509be2.js"
+         crossorigin="anonymous"
+      ></script>
    </head>
    <body>
-      <main>
-         <section>
+      <header style="clear: both">
+         <nav class="menuToggle">
+            <div class="menuContainer">
+               <i class="fas fa-bars"></i>
+            </div>
+         </nav>
+         <nav class="menuAnimated">
             <figure>
-               <img src="./assets/ED_Logo-05.png" alt="logoDorado" />
+               <img src="./assets/ED_Logo-05.png" alt="logo" />
             </figure>
-            <div>COMING SOON!</div>
-         </section>
-      </main>
-      <footer>&copy; Copyright 2021 Edgar Dorsey. All rights reserved.</footer>
+
+            <ul class="mainMenu">
+               <li>
+                  <a href="#"><i class="fas fa-home"></i></a>
+               </li>
+               <li><a href="#">CON&Oacute;CEME</a></li>
+               <li><a href="#">BLOG</a></li>
+               <li><a href="#">PUBLICACIONES</a></li>
+               <li><a href="#">CV</a></li>
+               <li><a href="#">CONTACTO</a></li>
+            </ul>
+
+            <div class="closeMenu">
+               <i class="fas fa-times"></i>
+            </div>
+
+            <ul class="socialMedia">
+               <li>
+                  <a
+                     href="https://www.facebook.com/dredgardorsey"
+                     target="_blank"
+                     ><i class="fab fa-facebook"></i
+                  ></a>
+               </li>
+               <li>
+                  <a
+                     href="https://www.instagram.com/dredgardorsey/"
+                     target="_blank"
+                     ><i class="fab fa-instagram"></i
+                  ></a>
+               </li>
+               <li>
+                  <a href="https://twitter.com/dredgardorsey" target="_blank"
+                     ><i class="fab fa-twitter"></i
+                  ></a>
+               </li>
+               <li>
+                  <a href="#"><i class="fab fa-github"></i></a>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <script src="./app.js"></script>
    </body>
 </html>

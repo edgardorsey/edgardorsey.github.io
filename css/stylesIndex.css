@@ -1,52 +1,102 @@
-* {
-   box-sizing: border-box;
-   margin: 0%;
-   padding: 0%;
+.menuToggle {
+   visibility: hidden;
+   position: absolute;
 }
 
-html {
-   font-size: 62.5%;
+.openMenu,
+.closeMenu {
+   display: none;
 }
 
-body {
-   background: #000000;
-}
-
-main {
-   display: flex;
-   width: 100%;
+header {
+   position: fixed;
    height: 100vh;
-   justify-content: center;
-   align-items: center;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   padding: 10px 20px 10px 20px;
 }
 
-body section {
+header .menuAnimated {
+   height: 100vh;
+   position: revert;
+   transform: none;
+   transition: none;
+   justify-items: space-evenly;
+}
+
+header .menuAnimated img {
+   width: 180px;
+   height: auto;
+   margin-top: 4.3rem;
+   margin-bottom: 10rem;
+}
+
+.mainMenu {
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding-bottom: 150px;
+   line-height: 9rem;
+   margin-bottom: auto;
+   margin-top: auto;
+   font-weight: 900;
 }
 
-section figure img {
-   width: 400px;
-   height: auto;
+.mainMenu .fa-home {
+   font-size: 6rem;
+   color: var(--white);
+   transition-duration: 250ms;
+   transition-property: font-size;
 }
 
-section div {
+.mainMenu li a::after {
+   content: " ";
+   height: 3px;
+   width: 80%;
+   background: var(--white);
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   transform: scale(0, 1);
+   transition: transform ease-in-out 300ms;
+}
+
+.mainMenu a:hover::after {
+   transform: scale(1, 1);
+}
+
+.mainMenu li a {
    font-size: 2.4rem;
-   font-style: normal;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: 500;
-   letter-spacing: 4px;
-   line-height: 5px;
-   color: #ffffffff;
+   transition: all 250ms linear;
 }
 
-footer {
-   width: 100%;
-   height: 20px;
-   margin-left: 10px;
-   font-size: 0.76rem;
-   color: #ffffffff;
+.socialMedia {
+   margin-top: 10rem;
+   margin-bottom: -1rem;
+   flex-direction: column;
+   line-height: 8.8rem;
+}
+
+.socialMedia a i {
+   padding: 0rem;
+   font-size: 5rem;
+   color: var(--white);
+   transition-duration: 500ms;
+   transition-property: font-size, color;
+}
+
+.fa-facebook:hover {
+   font-size: 6rem;
+   color: rgb(0, 110, 255);
+}
+.fa-twitter:hover {
+   font-size: 6rem;
+   color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+   font-size: 6rem;
+   color: rgb(255, 0, 191);
+}
+.fa-github:hover {
+   font-size: 6rem;
+   color: rgb(255, 123, 0);
 }

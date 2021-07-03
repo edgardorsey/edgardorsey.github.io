@@ -1,0 +1,13 @@
+header .menuAnimated img {
+   width: 130px;
+   height: auto;
+}
+
+.mainMenu {
+   line-height: 7rem;
+   font-size: 3.1rem;
+}
+
+.socialMedia a {
+   font-size: 4.8rem;
+}

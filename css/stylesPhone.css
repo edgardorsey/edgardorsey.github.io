@@ -1,0 +1,124 @@
+* {
+   box-sizing: border-box;
+   margin: 0%;
+   padding: 0%;
+}
+
+html {
+   font-size: 62.5%;
+   font-family: sans-serif;
+   font-size: 0.6rem;
+   background-color: rgb(85, 85, 85);
+}
+
+/* variables */
+:root {
+   --pseudoWhite: rgb(182, 182, 182);
+   --white: #ffffff;
+   --black: rgb(0, 0, 0, 0.9);
+}
+
+header {
+   display: flex;
+   background-color: var(--black);
+   color: var(--white);
+}
+
+header .menuToggle {
+   display: flex;
+   flex-grow: 1;
+   justify-content: flex-end;
+   margin: 10px 15px 10px 0;
+}
+
+.menuToggle .menuContainer {
+   font-size: 30px;
+}
+
+.menuContainer .fa-bars {
+   color: var(--white);
+   transition-duration: 1000ms;
+}
+
+.menuContainer .fa-bars.black {
+   color: var(--black);
+   transition-duration: 1000ms;
+}
+
+header .menuAnimated {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   text-align: center;
+   margin: auto;
+   background-color: var(--black);
+   transform: translateX(-100%);
+   transition: transform ease-in 800ms;
+}
+
+header .menuAnimated img {
+   width: 110px;
+   height: auto;
+   margin-top: 6rem;
+}
+
+header ul {
+   list-style: none;
+}
+
+header ul a {
+   text-decoration: none;
+   color: var(--white);
+}
+
+.closeMenu {
+   position: absolute;
+   right: 0;
+   top: 0;
+   margin-right: 25px;
+   margin-top: 25px;
+   font-size: 30px;
+}
+
+.mainMenu {
+   display: flex;
+   flex-direction: column;
+   margin-top: auto;
+   line-height: 5.5rem;
+   font-size: 2.6rem;
+   margin-bottom: auto;
+   margin-top: 5rem;
+}
+
+.socialMedia {
+   display: flex;
+   margin-bottom: auto;
+   margin-top: -3rem;
+}
+
+.socialMedia a {
+   padding: 2.4rem;
+   font-size: 4rem;
+}
+
+.menuAnimated.open {
+   transform: translateX(0);
+   transition: transform ease-in 800ms;
+}
+
+.fa-facebook:hover {
+   color: rgb(0, 110, 255);
+}
+.fa-twitter:hover {
+   color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+   color: rgb(255, 0, 191);
+}
+.fa-github:hover {
+   color: rgb(255, 123, 0);
+}

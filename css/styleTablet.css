@@ -1,0 +1,27 @@
+header .menuAnimated img {
+   width: 200px;
+   height: auto;
+   margin-bottom: auto;
+   margin-top: 10rem;
+}
+
+.mainMenu {
+   line-height: 10rem;
+   font-size: 5rem;
+   margin-top: auto;
+}
+
+.socialMedia a {
+   font-size: 7.5rem;
+   margin-inline: 4rem;
+}
+
+.closeMenu {
+   font-size: 50px;
+   margin-right: 45px;
+   margin-top: 45px;
+}
+
+.fa-bars {
+   font-size: 50px;
+}
