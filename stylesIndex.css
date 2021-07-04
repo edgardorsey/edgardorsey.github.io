@@ -1,6 +1,8 @@
 .menuToggle {
    visibility: hidden;
    position: absolute;
+   width: 0;
+   height: 0;
 }
 
 .openMenu,
@@ -14,7 +16,7 @@ header {
    left: 0;
    top: 0;
    bottom: 0;
-   padding: 10px 20px 10px 20px;
+   padding: 10px 10px 10px 10px;
 }
 
 header .menuAnimated {
@@ -22,30 +24,48 @@ header .menuAnimated {
    position: revert;
    transform: none;
    transition: none;
-   justify-items: space-evenly;
 }
 
 header .menuAnimated img {
-   width: 180px;
+   width: 140px;
    height: auto;
-   margin-top: 4.3rem;
-   margin-bottom: 10rem;
+   margin-top: 1rem;
+   margin-bottom: 0;
 }
 
 .mainMenu {
-   display: flex;
-   flex-direction: column;
-   line-height: 9rem;
+   line-height: 5.5rem;
+   margin-top: 15rem;
    margin-bottom: auto;
-   margin-top: auto;
    font-weight: 900;
+   color: var(--white);
+}
+
+.mainMenu li a {
+   font-size: 1.7rem;
 }
 
 .mainMenu .fa-home {
-   font-size: 6rem;
+   font-size: 4rem;
    color: var(--white);
-   transition-duration: 250ms;
-   transition-property: font-size;
+   transition: font-size ease-in-out 350ms;
+}
+
+.mainMenu .fa-home:hover {
+   font-size: 4.3rem;
+}
+
+.socialMedia {
+   display: flex;
+   flex-direction: column;
+   margin-top: auto;
+   line-height: 6rem;
+   width: 100%;
+}
+
+.socialMedia li i {
+   font-size: 3.8rem;
+   transition: font-size ease-in-out 350ms;
 }
 
 .mainMenu li a::after {
@@ -64,39 +84,19 @@ header .menuAnimated img {
    transform: scale(1, 1);
 }
 
-.mainMenu li a {
-   font-size: 2.4rem;
-   transition: all 250ms linear;
-}
-
-.socialMedia {
-   margin-top: 10rem;
-   margin-bottom: -1rem;
-   flex-direction: column;
-   line-height: 8.8rem;
-}
-
-.socialMedia a i {
-   padding: 0rem;
-   font-size: 5rem;
-   color: var(--white);
-   transition-duration: 500ms;
-   transition-property: font-size, color;
-}
-
 .fa-facebook:hover {
-   font-size: 6rem;
+   font-size: 4.8rem;
    color: rgb(0, 110, 255);
 }
 .fa-twitter:hover {
-   font-size: 6rem;
+   font-size: 4.8rem;
    color: rgb(86, 154, 243);
 }
 .fa-instagram:hover {
-   font-size: 6rem;
+   font-size: 4.8rem;
    color: rgb(255, 0, 191);
 }
 .fa-github:hover {
-   font-size: 6rem;
+   font-size: 4.8rem;
    color: rgb(255, 123, 0);
 }

@@ -54,7 +54,6 @@ header .menuAnimated {
    align-items: center;
    justify-content: space-around;
    text-align: center;
-   margin: auto;
    background-color: var(--black);
    transform: translateX(-100%);
    transition: transform ease-in 800ms;

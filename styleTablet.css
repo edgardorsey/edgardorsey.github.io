@@ -6,14 +6,14 @@ header .menuAnimated img {
 }
 
 .mainMenu {
-   line-height: 10rem;
-   font-size: 5rem;
+   line-height: 8rem;
+   font-size: 3.6rem;
    margin-top: auto;
 }
 
 .socialMedia a {
-   font-size: 7.5rem;
-   margin-inline: 4rem;
+   font-size: 5rem;
+   margin-inline: 1rem;
 }
 
 .closeMenu {
