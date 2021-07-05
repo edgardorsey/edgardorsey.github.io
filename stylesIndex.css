@@ -85,18 +85,18 @@ header .menuAnimated img {
 }
 
 .fa-facebook:hover {
-   font-size: 5.2rem;
+   font-size: 4.8rem;
    color: rgb(0, 110, 255);
 }
 .fa-twitter:hover {
-   font-size: 5.2rem;
+   font-size: 4.8rem;
    color: rgb(86, 154, 243);
 }
 .fa-instagram:hover {
-   font-size: 5.2rem;
+   font-size: 4.8rem;
    color: rgb(255, 0, 191);
 }
 .fa-github:hover {
-   font-size: 5.2rem;
+   font-size: 4.8rem;
    color: rgb(255, 123, 0);
 }
