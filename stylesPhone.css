@@ -35,6 +35,10 @@ header .menuToggle {
    font-size: 30px;
 }
 
+.menuToggle .menuContainer:hover {
+   cursor: pointer;
+}
+
 .menuContainer .fa-bars {
    color: var(--white);
    transition-duration: 1000ms;
@@ -83,6 +87,10 @@ header ul a {
    font-size: 30px;
 }
 
+.closeMenu:hover {
+   cursor: pointer;
+}
+
 .mainMenu {
    display: flex;
    flex-direction: column;
@@ -93,15 +101,32 @@ header ul a {
    margin-top: 5rem;
 }
 
+.mainMenu li a::after {
+   content: " ";
+   height: 3px;
+   width: 80%;
+   background: var(--white);
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   transform: scale(0, 1);
+   transition: transform ease-in-out 300ms;
+}
+
+.mainMenu a:hover::after {
+   transform: scale(1, 1);
+}
+
 .socialMedia {
    display: flex;
    margin-bottom: auto;
    margin-top: -3rem;
 }
 
-.socialMedia a {
+.socialMedia li i {
    padding: 2.4rem;
-   font-size: 4rem;
+   font-size: 4.2rem;
+   transition: font-size ease-in-out 350ms;
 }
 
 .menuAnimated.open {
