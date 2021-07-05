@@ -24,6 +24,7 @@ header .menuAnimated {
    position: revert;
    transform: none;
    transition: none;
+   background-color: transparent;
 }
 
 header .menuAnimated img {
