@@ -8,14 +8,14 @@ html {
    font-size: 62.5%;
    font-family: sans-serif;
    font-size: 0.6rem;
-   background-color: rgb(85, 85, 85);
+   background-color: rgb(0, 0, 0);
 }
 
 /* variables */
 :root {
    --pseudoWhite: rgb(182, 182, 182);
    --white: #ffffff;
-   --black: rgb(0, 0, 0, 0.9);
+   --black: rgb(0, 0, 0, 0.95);
 }
 
 header {
@@ -53,6 +53,7 @@ header .menuAnimated {
    height: 100%;
    width: 100%;
    position: absolute;
+   z-index: 10;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -145,4 +146,80 @@ header ul a {
 }
 .fa-github:hover {
    color: rgb(255, 123, 0);
+}
+
+.home {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: auto;
+}
+
+.firstHome {
+   width: 100%;
+   height: auto;
+   position: relative;
+   display: flex;
+}
+
+.home img {
+   width: 100vw;
+   height: auto;
+}
+
+.firstHome div {
+   background-color: rgb(0, 0, 0, 0.65);
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   top: 60%;
+   font-weight: 900;
+   color: var(--white);
+   padding: 10px 0;
+   line-height: 3.6rem;
+}
+
+.firstHome .text1 strong {
+   width: 100%;
+   height: 100%;
+   font-weight: 100;
+}
+
+.firstHome div .text1 {
+   font-size: 3rem;
+}
+
+.firstHome div .text2 {
+   font-size: 1.9rem;
+}
+
+.secondHome {
+   height: auto;
+   display: grid;
+   gap: 10px;
+   margin-top: 8px;
+   text-align: center;
+   justify-content: space-evenly;
+   grid-template-columns: repeat(4, minmax(80px, 300px));
+}
+
+.secondHome div {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-items: center;
+   color: var(--white);
+   font-size: 1.7rem;
+}
+
+.secondHome img {
+   width: 75px;
+   margin-bottom: 1rem;
 }

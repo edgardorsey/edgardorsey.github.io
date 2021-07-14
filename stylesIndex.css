@@ -28,14 +28,15 @@ header .menuAnimated {
 }
 
 header .menuAnimated img {
-   width: 140px;
+   width: 117px;
+   max-width: 200px;
    height: auto;
-   margin-top: 1rem;
+   margin-top: 2rem;
    margin-bottom: 0;
 }
 
 .mainMenu {
-   line-height: 5.5rem;
+   line-height: 5.6rem;
    margin-top: 15rem;
    margin-bottom: auto;
    font-weight: 900;
@@ -43,7 +44,7 @@ header .menuAnimated img {
 }
 
 .mainMenu li a {
-   font-size: 1.7rem;
+   font-size: 1.5rem;
 }
 
 .mainMenu .fa-home {
@@ -64,8 +65,8 @@ header .menuAnimated img {
 }
 
 .socialMedia li i {
-   font-size: 3.8rem;
-   line-height: 3rem;
+   font-size: 3.7rem;
+   line-height: 1.8rem;
    transition: font-size ease-in-out 350ms;
 }
 

@@ -5,7 +5,6 @@ const bars = document.querySelector('.fa-bars');
 const mainMenu = document.querySelector('.mainMenu');
 const socialMedia = document.querySelector('.socialMedia');
 let menuOpen = false;
-let blackBars = false;
 
 menuContainer.addEventListener('click', () => {
     if(!menuOpen) {
